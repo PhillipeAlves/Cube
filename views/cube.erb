@@ -1,0 +1,75 @@
+<div class="cube scale">
+
+    <!-- FRONT -->
+
+    <img src="<%= cube["front"] %>" class="side front1" alt="">
+    <img src="<%= cube["front"] %>" class="side front2" alt="">
+    <img src="<%= cube["front"] %>" class="side front3" alt="">
+    <img src="<%= cube["front"] %>" class="side front4" alt="">
+    <img src="<%= cube["front"] %>" class="side front5" alt="">
+    <img src="<%= cube["front"] %>" class="side front6" alt="">
+    <img src="<%= cube["front"] %>" class="side front7" alt="">
+    <img src="<%= cube["front"] %>" class="side front8" alt="">
+    <img src="<%= cube["front"] %>" class="side front9" alt="">
+
+    <img src="<%= cube["front"] %>" class="side back1" alt="">
+    <img src="<%= cube["front"] %>" class="side back2" alt="">
+    <img src="<%= cube["front"] %>" class="side back3" alt="">
+    <img src="<%= cube["front"] %>" class="side back4" alt="">
+    <img src="<%= cube["front"] %>" class="side back5" alt="">
+    <img src="<%= cube["front"] %>" class="side back6" alt="">
+    <img src="<%= cube["front"] %>" class="side back7" alt="">
+    <img src="<%= cube["front"] %>" class="side back8" alt="">
+    <img src="<%= cube["front"] %>" class="side back9" alt="">
+
+    <!-- SIDE -->
+
+    <img src="<%= cube["side"] %>" class="side left1" alt="">
+    <img src="<%= cube["side"] %>" class="side left2" alt="">
+    <img src="<%= cube["side"] %>" class="side left3" alt="">
+    <img src="<%= cube["side"] %>" class="side left4" alt="">
+    <img src="<%= cube["side"] %>" class="side left5" alt="">
+    <img src="<%= cube["side"] %>" class="side left6" alt="">
+    <img src="<%= cube["side"] %>" class="side left7" alt="">
+    <img src="<%= cube["side"] %>" class="side left8" alt="">
+    <img src="<%= cube["side"] %>" class="side left9" alt="">
+
+    <img src="<%= cube["side"] %>" class="side right1" alt="">
+    <img src="<%= cube["side"] %>" class="side right2" alt="">
+    <img src="<%= cube["side"] %>" class="side right3" alt="">
+    <img src="<%= cube["side"] %>" class="side right4" alt="">
+    <img src="<%= cube["side"] %>" class="side right5" alt="">
+    <img src="<%= cube["side"] %>" class="side right6" alt="">
+    <img src="<%= cube["side"] %>" class="side right7" alt="">
+    <img src="<%= cube["side"] %>" class="side right8" alt="">
+    <img src="<%= cube["side"] %>" class="side right9" alt="">
+
+    <!-- TOP -->
+
+    <img src="<%= cube["top"] %>" class="side top1" alt="">
+    <img src="<%= cube["top"] %>" class="side top2" alt="">
+    <img src="<%= cube["top"] %>" class="side top3" alt="">
+    <img src="<%= cube["top"] %>" class="side top4" alt="">
+    <img src="<%= cube["top"] %>" class="side top5" alt="">
+    <img src="<%= cube["top"] %>" class="side top6" alt="">
+    <img src="<%= cube["top"] %>" class="side top7" alt="">
+    <img src="<%= cube["top"] %>" class="side top8" alt="">
+    <img src="<%= cube["top"] %>" class="side top9" alt="">
+
+    <img src="<%= cube["top"] %>" class="side bottom1" alt="">
+    <img src="<%= cube["top"] %>" class="side bottom2" alt="">
+    <img src="<%= cube["top"] %>" class="side bottom3" alt="">
+    <img src="<%= cube["top"] %>" class="side bottom4" alt="">
+    <img src="<%= cube["top"] %>" class="side bottom5" alt="">
+    <img src="<%= cube["top"] %>" class="side bottom6" alt="">
+    <img src="<%= cube["top"] %>" class="side bottom7" alt="">
+    <img src="<%= cube["top"] %>" class="side bottom8" alt="">
+    <img src="<%= cube["top"] %>" class="side bottom9" alt="">
+    
+</div>
+
+<form action="/cube" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="hidden" name="id" value="<%= cube["id"] %>">
+    <button class="reset"> RESET </button>
+</form>

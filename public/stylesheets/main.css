@@ -1,0 +1,359 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+body
+{
+    background-image: url(https://wallpapers.net/download-3d-geometric-black-cube-wallpaper/download/1080x1920.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 2em;
+}
+h1
+{
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.525);
+    font-size: 5em;
+}
+.u
+{
+    color: #FF6D2D;
+}
+label
+{
+    display: block;
+    margin: 50px auto;
+    border-bottom: 1px solid #FF6D2D;
+    max-width: 150px;
+}
+button
+{
+    margin-top: 100px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+button:focus 
+{
+    outline: 0;
+}
+.reset
+{
+    margin-top: 290px;
+    padding-top: 10px;
+    width: 412px;
+    font-size: 70px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.183), rgb(0, 0, 0)) ;
+    box-shadow: inset 3px 3px 5px black,
+                inset -3px -3px 5px black;
+}
+.reset:active
+{
+    background-color: #FF6D2D;
+}
+.fa-play
+{
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+.fa-play:active
+{
+    color: #FF6D2D;
+}
+input
+{
+    width: 700px;
+    font-family: inherit;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 50px;
+    background-color: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 2px solid white;
+    color: #FF6D2D;
+}
+input::placeholder 
+{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+input:focus
+{
+    outline: none;
+    transition-duration: 1s;
+    color: white;
+}
+input:focus::placeholder 
+{
+    color: rgba(243, 243, 243, 0.553);
+    opacity: 1;
+}
+
+/* CUBE */
+
+.cube {
+    width: 100px;
+    height: 100px;
+    margin: 150px auto 0 auto;
+    transform-style: preserve-3d;
+    transform: rotateX(220deg) rotateY(-100deg) rotateZ(-180deg); 
+}
+.side {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 1px solid white;
+}
+
+/* FRONT */
+
+.front1 {
+    transform: translate3d(0, 0, 100px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.front2 {
+    transform: translate3d(100px, 0, 100px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.front3 {
+    transform: translate3d(200px, 0, 100px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.front4 {
+    transform: translate3d(100px, 0, 200px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.front5 {
+    transform: translate3d(200px, 0, 200px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.front6 {
+    transform: translate3d(0, 0, 300px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.front7 {
+    transform: translate3d(100px, 0, 300px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.front8 {
+    transform: translate3d(200px, 0, 300px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.front9 {
+    transform: translate3d(0, 0, 200px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.back1 {
+    transform: translate3d(0, -300px, 100px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.back2 {
+    transform: translate3d(100px, -300px, 100px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.back3 {
+    transform: translate3d(200px, -300px, 100px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.back4 {
+    transform: translate3d(100px, -300px, 200px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.back5 {
+    transform: translate3d(200px, -300px, 200px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.back6 {
+    transform: translate3d(0, -300px, 300px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.back7 {
+    transform: translate3d(100px, -300px, 300px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.back8 {
+    transform: translate3d(200px, -300px, 300px) rotateX(90deg);
+    transform-origin: bottom;
+}
+.back9 {
+    transform: translate3d(0, -300px, 200px) rotateX(90deg);
+    transform-origin: bottom;
+}
+
+/* SIDE */
+
+.left1 {
+    transform: translate3d(200px, 0, 200px) rotateY(90deg);
+    transform-origin: right;
+}
+.left2 {
+    transform: translate3d(200px, -100px, 200px) rotateY(90deg);
+    transform-origin: right;
+}
+.left3 {
+    transform: translate3d(200px, -200px, 200px) rotateY(90deg);
+    transform-origin: right;
+}
+.left4 {
+    transform: translate3d(200px, 0, 100px) rotateY(90deg);
+    transform-origin: right;
+}
+.left5 {
+    transform: translate3d(200px, 0, 0) rotateY(90deg);
+    transform-origin: right;
+}
+.left6 {
+    transform: translate3d(200px, -100px, 100px) rotateY(90deg);
+    transform-origin: right;
+}
+.left7 {
+    transform: translate3d(200px, -200px, 100px) rotateY(90deg);
+    transform-origin: right;
+}
+.left8 {
+    transform: translate3d(200px, -100px, 0) rotateY(90deg);
+    transform-origin: right;
+}
+.left9 {
+    transform: translate3d(200px, -200px, 0) rotateY(90deg);
+    transform-origin: right;
+}
+.right1 {
+    transform: translate3d(-100px, 0, 200px) rotateY(90deg);
+    transform-origin: right;
+}
+.right2 {
+    transform: translate3d(-100px, -100px, 200px) rotateY(90deg);
+    transform-origin: right;
+}
+.right3 {
+    transform: translate3d(-100px, -200px, 200px) rotateY(90deg);
+    transform-origin: right;
+}
+.right4 {
+    transform: translate3d(-100px, 0, 100px) rotateY(90deg);
+    transform-origin: right;
+}
+.right5 {
+    transform: translate3d(-100px, 0, 0) rotateY(90deg);
+    transform-origin: right;
+}
+.right6 {
+    transform: translate3d(-100px, -100px, 100px) rotateY(90deg);
+    transform-origin: right;
+}
+.right7 {
+    transform: translate3d(-100px, -200px, 100px) rotateY(90deg);
+    transform-origin: right;
+}
+.right8 {
+    transform: translate3d(-100px, -100px, 0) rotateY(90deg);
+    transform-origin: right;
+}
+.right9 {
+    transform: translate3d(-100px, -200px, 0) rotateY(90deg);
+    transform-origin: right;
+}
+
+/* TOP */
+
+.top1 {
+    transform: translate3d(0, 0, 0);
+    transform-origin: bottom;
+}
+.top2 {
+    transform: translate3d(0, -100px, 0);
+    transform-origin: bottom;
+}
+.top3 {
+    transform: translate3d(0, -200px, 0);
+    transform-origin: bottom;
+}
+.top4 {
+    transform: translate3d(100px, 0, 0);
+    transform-origin: bottom;
+}
+.top5 {
+    transform: translate3d(200px, 0, 0);
+    transform-origin: bottom;
+}
+.top6 {
+    transform: translate3d(100px, -100px, 0);
+    transform-origin: bottom;
+}
+.top7 {
+    transform: translate3d(100px, -200px, 0);
+    transform-origin: bottom;
+}
+.top8 {
+    transform: translate3d(200px, -100px, 0);
+    transform-origin: bottom;
+}
+.top9 {
+    transform: translate3d(200px, -200px, 0);
+    transform-origin: bottom;
+}
+.bottom1 {
+    transform: translate3d(0, 0, 300px);
+    transform-origin: bottom;
+}
+.bottom2 {
+    transform: translate3d(0, -100px, 300px);
+    transform-origin: bottom;
+}
+.bottom3 {
+    transform: translate3d(0, -200px, 300px);
+    transform-origin: bottom;
+}
+.bottom4 {
+    transform: translate3d(100px, 0, 300px);
+    transform-origin: bottom;
+}
+.bottom5 {
+    transform: translate3d(200px, 0, 300px);
+    transform-origin: bottom;
+}
+.bottom6 {
+    transform: translate3d(100px, -100px, 300px);
+    transform-origin: bottom;
+}
+.bottom7 {
+    transform: translate3d(100px, -200px, 300px);
+    transform-origin: bottom;
+}
+.bottom8 {
+    transform: translate3d(200px, -100px, 300px);
+    transform-origin: bottom;
+}
+.bottom9 {
+    transform: translate3d(200px, -200px, 300px);
+    transform-origin: bottom;
+}
+
+/* ANIMATION */
+
+.scale
+{
+animation: scale 60s ease-in-out infinite;
+}
+@keyframes scale  
+{
+    0% {
+        transform: scale(1) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+    50% {
+        transform: scale(.5) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+        transform: scale(1) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
